@@ -20,7 +20,7 @@ const SignIn = () => {
         .post(`/users/signin`,{ data })
         .then((res) =>{
           if (res?.data?.success) {
-            navigate('/dashboard')
+            navigate('/hotels')
           } else {
             alert(res?.data?.message)
           }
