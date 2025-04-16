@@ -5,12 +5,14 @@ import SignUp from './pages/signUp';
 import SignIn from './pages/signIn';
 import Booking from './pages/booking';
 import CheckIn from './pages/checkIn';
+import Home from './pages/home';
 
 function App() {
   return (
     <BrowserRouter>
       {/* <p>Have Account?<Link to="/signin"><SignedIn>Sign In</SignedIn></Link></p> */}
       <Routes>
+        <Route path='/' element={<Home />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/signin' element={<SignIn />} />
         <Route path='/hotels' element={<Dashboard />} />
