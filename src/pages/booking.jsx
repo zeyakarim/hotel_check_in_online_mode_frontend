@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import axiosInstance from '../utility/axios-instance';
 import StarRateIcon from '@mui/icons-material/StarRate';
-import DateRange from '../components/datePicker';
+import DateRange from '../components/DateRange';
 import { Add, Remove } from '@mui/icons-material';
 import { TextField } from '@mui/material';
 

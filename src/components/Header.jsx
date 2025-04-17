@@ -1,5 +1,4 @@
-import { Button, IconButton, Tooltip } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { IconButton, Tooltip } from '@mui/material';
 import hotelImage from '/hotel.png';
 import { Fragment } from 'react';
 import { ArrowForward } from '@mui/icons-material';
@@ -7,69 +6,8 @@ import { ArrowForward } from '@mui/icons-material';
 const Header = () => {
     return (
         <Fragment>
-            <header className="sticky top-0 z-50 bg-white shadow-md w-full">
-                <div className="flex flex-row justify-between items-center w-[90%] mx-auto py-3 gap-4">
-                    <div className="flex items-center gap-8">
-                        <Link to="/" className="font-semibold text-2xl hover:text-blue-600 transition-colors">
-                            Tripster
-                        </Link>
-                        
-                        <nav className="hidden md:block">
-                            <ul className="flex flex-row gap-6">
-                                {['Home', 'About', 'Packages', 'Community'].map((item) => (
-                                    <li key={item}>
-                                        <Link 
-                                            to={`/${item.toLowerCase()}`} 
-                                            className="text-gray-700 hover:text-gray-900 hover:underline transition-colors text-sm font-medium"
-                                        >
-                                            {item}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <div className="flex gap-3">
-                        <Button 
-                            variant="outlined"
-                            component={Link}
-                            to="/signup"
-                            sx={{
-                                borderRadius: '20px',
-                                textTransform: 'capitalize',
-                                borderColor: '#213547',
-                                color: '#213547',
-                                '&:hover': {
-                                    borderColor: '#1a2a3a',
-                                    color: '#1a2a3a'
-                                }
-                            }}
-                        >
-                            Sign Up
-                        </Button>
-                        <Button 
-                            variant="contained"
-                            component={Link}
-                            to="/signin"
-                            sx={{
-                                borderRadius: '20px',
-                                textTransform: 'capitalize',
-                                backgroundColor: '#213547',
-                                '&:hover': {
-                                    backgroundColor: '#1a2a3a',
-                                    color: '#fff'
-                                }
-                            }}
-                        >
-                            Log In
-                        </Button>
-                    </div>
-                </div>
-            </header>
-
             <div 
-                className="w-[90%] mx-auto rounded-xl relative"
+                className="w-[90%] mx-auto mt-10 rounded-xl relative"
                 style={{boxShadow:'0px 0px 6px 2px #0000001a'}}
             >
                 <div 
