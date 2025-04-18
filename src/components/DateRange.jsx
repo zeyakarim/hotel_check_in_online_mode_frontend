@@ -4,7 +4,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";
 
 const sharedStyles = {
-    width: '80%',
+    width: '90%',
     "& .MuiOutlinedInput-input": { padding: "9.5px 15px", fontSize: "14px" },
     "& .MuiSvgIcon-root": { fontSize: "18px" },
     "& .MuiOutlinedInput-notchedOutline": { borderColor: "#0000003b !important" },

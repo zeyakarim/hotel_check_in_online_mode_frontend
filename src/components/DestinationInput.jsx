@@ -4,7 +4,7 @@ import React from 'react'
 
 const DestinationInput = () => {
     return (
-        <div className='w-[80%] flex flex-col gap-1'>
+        <div className='w-[90%] flex flex-col gap-1'>
             <p className='text-sm ml-1'>Destination</p>
             <TextField
                 sx={{ 

@@ -55,7 +55,7 @@ const GuestInput = () => {
 
     return (
         <div className='relative' ref={dialogRef}>
-            <div className='w-[80%] flex flex-col gap-1'>
+            <div className='w-[90%] flex flex-col gap-1'>
                 <p className='text-sm ml-1'>Guests</p>
                 <div className='relative'>
                     <TextField
