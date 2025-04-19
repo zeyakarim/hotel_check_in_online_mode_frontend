@@ -15,49 +15,57 @@ const hotels = [
         reveiws: '1,920 reviews',
         ratingType: 'Excellent',
         rating: '9.6',
+        ratingTypeColor: '#009D52',
+        ratingBgColor: '#E1FFD7',
         price: '$180'
     },
     {
-        image: '/hotel-norrebro.jpg',
-        name: 'Hotel Norrebro',
-        location: '0.4 km from city center',
-        provides: ['Free Cancellation', 'Breakfast Included'],
-        roomType: 'Comfort Room',
-        bed: '1x king size bed',
+        image: '/hotel-apple.jpg',
+        name: 'Hotel Apple',
+        location: '0.6 km from city center',
+        provides: ['Free Airport Shuttle', 'Breakfast Included'],
+        roomType: 'Standard Room',
+        bed: '1x queen size bed',
         bathroom: '1x bathroom',
-        tags: ['#Hot deal', '#Popular'],
-        reveiws: '1,920 reviews',
-        ratingType: 'Excellent',
-        rating: '9.6',
-        price: '$180'
+        tags: ['#Hot deal'],
+        reveiws: '792 reviews',
+        ratingType: 'Good',
+        rating: '8.3',
+        ratingTypeColor: '#1a2a3a',
+        ratingBgColor: '#cddff1',
+        price: '$260'
     },
     {
-        image: '/hotel-norrebro.jpg',
-        name: 'Hotel Norrebro',
-        location: '0.4 km from city center',
-        provides: ['Free Cancellation', 'Breakfast Included'],
-        roomType: 'Comfort Room',
+        image: '/hotel-little-mermaid.jpeg',
+        name: 'Hotel Little Mermaid',
+        location: '2.0 km from city center',
+        provides: ['Breakfast Included'],
+        roomType: 'Premium Room',
         bed: '1x king size bed',
         bathroom: '1x bathroom',
-        tags: ['#Hot deal', '#Popular'],
-        reveiws: '1,920 reviews',
+        tags: ['#Popular', '#Rare find'],
+        reveiws: '2,000 reviews',
         ratingType: 'Excellent',
-        rating: '9.6',
-        price: '$180'
+        rating: '9.5',
+        ratingTypeColor: '#009D52',
+        ratingBgColor: '#E1FFD7',
+        price: '$420'
     },
     {
-        image: '/hotel-norrebro.jpg',
-        name: 'Hotel Norrebro',
-        location: '0.4 km from city center',
-        provides: ['Free Cancellation', 'Breakfast Included'],
+        image: '/hotel-bekpek.webp',
+        name: 'Hotel Bekpek',
+        location: '2.2 km from city center',
+        provides: ['Backpacker hostel', 'Breakfast Included'],
         roomType: 'Comfort Room',
-        bed: '1x king size bed',
-        bathroom: '1x bathroom',
-        tags: ['#Hot deal', '#Popular'],
-        reveiws: '1,920 reviews',
-        ratingType: 'Excellent',
-        rating: '9.6',
-        price: '$180'
+        bed: '1x bunk bed',
+        bathroom: '1x common bathroom',
+        tags: ['#Budget'],
+        reveiws: '840 reviews',
+        ratingType: 'Average',
+        rating: '6.4',
+        ratingTypeColor: '#E1A200',
+        ratingBgColor: '#FFF8D3',
+        price: '$44'
     }
 ]
 
@@ -128,10 +136,16 @@ const HotelsComponent = () => {
                         <div className='flex flex-col justify-between'>
                             <div className='flex justify-between gap-2 items-center'>
                                 <div>
-                                    <p className='text-green-500 font-semibold'>{hotel?.ratingType}</p>
+                                    <p 
+                                        className='font-semibold'
+                                        style={{ color: hotel?.ratingTypeColor }}
+                                    >{hotel?.ratingType}</p>
                                     <p className='text-[#858585] text-sm'>{hotel?.reveiws}</p>
                                 </div>
-                                <p className='bg-[#E1FFD7] text-[#009D52] py-1 px-4 text-sm rounded-full font-semibold'>{hotel?.rating}</p>
+                                <p 
+                                    className='py-1 px-4 text-sm rounded-full font-semibold'
+                                    style={{ color: hotel?.ratingTypeColor, backgroundColor: hotel?.ratingBgColor }}
+                                >{hotel?.rating}</p>
                             </div>
 
                             <div className='flex flex-col gap-2'>
